@@ -16,7 +16,7 @@ import { MapperKind, mapSchema } from '@graphql-tools/utils'
 
 const ACCESS_TOKEN = '----'
 const SPACE_ID = '----'
-const ENVIRONMENTS = 'master'
+const ENVIRONMENT = 'master'
 const HOST = 'graphql.contentful.com'
 
 const init = async (): Promise<void> => {
@@ -24,7 +24,7 @@ const init = async (): Promise<void> => {
     /**
      * Using contentful as a backend to get the `IntrospectionQuery` response
      */
-    `https://${HOST}/content/v1/spaces/${SPACE_ID}/environments/${ENVIRONMENTS}?access_token=${ACCESS_TOKEN}`,
+    `https://${HOST}/content/v1/spaces/${SPACE_ID}/environments/${ENVIRONMENT}?access_token=${ACCESS_TOKEN}`,
     body
   )
 

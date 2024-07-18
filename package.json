@@ -1,0 +1,28 @@
+{
+  "name": "graphql-codegen-remove-certain-fields",
+  "version": "1.0.0",
+  "description": "An example on how to remove certain fields before generating the typescript types using graphql-codegen",
+  "scripts": {
+    "generate": "graphql-codegen --config src/index.ts",
+    "pregenerate": "ts-node src/fetch-schema.ts"
+  },
+  "keywords": [],
+  "author": "Rowadz",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "graphql": "^16.9.0"
+  },
+  "engines": {
+    "node": "v18.17.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/typescript": "4.0.9",
+    "@graphql-codegen/typescript-resolvers": "4.2.1",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.3"
+  },
+  "main": "index.js"
+}
